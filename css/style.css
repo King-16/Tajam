@@ -1,0 +1,455 @@
+
+/*-----------------------------------Fonts-----------------------------*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Hammersmith+One');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto');
+
+/*------------------------------Specification-----------------------------*/
+
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+p{
+	color: #333333;
+	font-family: Roboto;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 22px;
+}
+h1{
+	color: #ffffff;
+	font-family: "Playfair Display - Black";
+	font-size: 32px;
+	font-weight: 400;
+	letter-spacing: 0.32px;
+	font-weight: bold;
+}
+h2{
+	color: #413d4b;
+	font-family: "Playfair Display";
+	font-size: 22px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+h3{
+	color: #ffffff;
+	font-family: "Roboto - Black";
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+h4{
+	color: #413d4b;
+	font-family: "Roboto - Black";
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.7px;
+}
+h5{
+	color: #ffffff;
+	font-family: "Roboto - Black";
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 26px;
+	text-transform: uppercase;
+	letter-spacing: 0.75px;
+	display: block;
+}
+.bt{
+	color: #00e0d0;
+	font-family: "Hammersmith One";
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+	background: none;
+	display: block;
+}
+.wrapper{
+	max-width: 100%;
+	overflow: hidden;
+}
+
+/*-----------------------------------Header-----------------------------*/
+
+header{
+	background: url(../img/header-bg.jpg) center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	height: 670px;
+	padding-top: 15px;
+}
+.menu{
+	padding-top: 15px;
+}
+.menu__title{
+	display: none;
+	color: #fff;
+	text-align: right;
+	position: relative;
+	right: 0;
+	top: -30px;
+}
+.menu a{
+	color: #ffffff;
+	font-family: "Roboto", serif;
+	letter-spacing: 0.33px;
+	font-size: 13px;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.menu a:hover{
+	color: #00e0d0;
+	text-decoration: none;
+}
+.menu__item{
+	margin-left: 25px;
+}
+.h__header{
+	margin-top: 180px;
+	text-align: center;
+}
+.h__header:after{
+	display: block;
+	content: ' ';
+	margin: 20px auto;
+	width: 50px;
+	height: 1px;
+	background-color: #00e0d0;
+}
+.header__p{
+	color: #ffffff;
+	font-family: Roboto;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 24px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.fixed{
+	position:fixed;
+	z-index: 2;
+	background: #332a58;
+	left: 0;
+	max-width: 100%;
+	top: 0;
+}
+/*--------------------------------Screen TWO-----------------------------*/
+
+.story{
+	padding: 70px 0;
+}
+.story__p{
+	margin-top: 30px;
+	color: #413d4b;
+	font-family: Roboto;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 22px;
+	letter-spacing: 0.42px;
+}
+
+/*--------------------------------Screen THREE---------------------------*/
+
+.watch__story{
+	background: url(../img/watch__story-bg.jpg) center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding: 200px 0;
+}
+.play{
+	font-size: 100px;
+	color: #fff;
+	margin-bottom: 35px;
+	text-align: center;
+	position: relative;
+}
+.watch__story-h{
+	position: absolute;
+	left: -5px;
+}
+
+/*--------------------------------Screen FOO---------------------------*/
+
+.expertise{
+	padding: 70px 0 100px 0;
+}
+.expertise__p{
+	text-align: center;
+	margin-top: 15px;
+	color: #2f2d35;
+	font-family: "Playfair Display";
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 1.05px;
+}
+.expertise__h{
+	text-align: center;
+}
+.expertise__p:after{
+	display: block;
+	margin: 20px auto;
+	content: ' ';
+	width: 50px;
+	height: 2px;
+	background-color: #413d4b;
+}
+.expertise__item{
+	text-align: center;
+	margin-top: 80px;
+}
+.expertise__item-h{
+	margin: 35px 0 25px 0;
+}
+.expertise__item-p{
+	text-align: center;
+}
+
+/*--------------------------------Screen FIVE---------------------------*/
+
+.team{
+	background: url(../img/Team-bg.jpg) center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding: 70px 0;
+}
+.team_h,.team_p{
+	text-align: center;
+	color: #fff;
+}
+.team_p{
+	margin-top: 15px;
+	letter-spacing: 1.05px;
+}
+.team_p:after{
+	width: 50px;
+	height: 2px;
+	background-color: #ffffff;
+	display: block;
+	content: ' ';
+	margin: 20px auto;
+}
+.team__item{
+	text-align: center;
+}
+.team__item-head{
+	height: 229px;
+	background: #fff;
+	margin-bottom: 23px;	
+}
+.team__item-title,.seven__span{
+	margin-bottom: 12px;
+	color: #ffffff;
+	font-family: "Roboto - Black";
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.7px;
+}
+.team__item-p{
+	color: #fafafa;
+	font-family: Roboto;
+	font-size: 13px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+.team__features{
+	margin: 50px 0 70px 0;
+}
+.team__bottom-p{
+	color: #f3f3f3;
+	font-family: Roboto;
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: 0.7px;
+	text-align: center;
+}
+
+/*--------------------------------Screen SIX---------------------------*/
+
+.our__works{
+	margin: 70px 0;
+}
+.our__works .row:first-child{
+	margin-bottom: 70px;
+}
+.our__works-bg{
+	background: #8a8a8a;
+	width: 100%;
+	height: 400px;
+	margin-bottom: 70px;
+}
+
+/*--------------------------------Screen SEVEN---------------------------*/
+
+.seven{
+	background: url(../img/seven-bg.jpg)center  center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding: 70px 0;
+	text-align: center;
+}
+.seven__p{
+	margin: 40px 0 50px 0;
+	color: #ffffff;
+	font-family: "Playfair Display";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+	letter-spacing: 0.4px;
+}
+.seven-p{
+	color: #ffffff;
+	font-family: Roboto;
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 22px;
+	text-transform: uppercase;
+}
+.seven__pn{
+	font-size: 30px;
+	color: #f3f3f3;
+	margin: 0 16px 0 30px;
+	cursor: pointer;
+}
+.seven__item{
+	margin-left: 14px;
+}
+.seven .row:nth-child(3){
+	margin-top: 45px;
+}
+
+/*--------------------------------Screen EGHT---------------------------*/
+
+.client__form{
+	padding: 70px 0;
+	display: flex;
+
+}
+.form__user{
+	display: flex;
+	flex-direction: column;
+}
+.client__form-h{
+	margin-bottom: 35px;
+}
+.form__item{
+	margin-bottom: 23px;
+	padding: 17px 0 14px 20px;
+}
+.client__item-block{
+	display: flex;
+}
+.client__item{
+	margin-bottom: 50px;
+}
+.client__h{
+	display: block;
+	margin-bottom: 50px;
+}
+.client__form .container{
+	flex-wrap: wrap;
+}
+
+/*------------------------------Screen FOOTER---------------------------*/
+
+footer{
+	background: url(../img/footer-bg.jpg) center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding: 70px 0;
+	flex-wrap: wrap;
+	display: flex;
+}
+.tajam__p,.studio__p{
+	color: #fff;
+	font-family: Roboto;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 26px;
+	letter-spacing: 0.35px;
+}
+.mt-80{
+	margin-top: 80px;
+}
+.footer__item{
+	margin-left: 15px;
+	color: #fff;
+}
+.footer__item:first-child{
+	margin-left: 0;
+}
+.footer__logo{
+	margin-bottom: 30px;
+}
+.studio__p{
+	margin-top: 40px;
+	margin-bottom: 30px;
+	text-align: left;
+}
+.mark{
+	background: none;
+	margin-right: 15px;
+}
+.tell{
+	color: #fff;
+	letter-spacing: 0.35px;
+}
+.sub{
+	padding: 17px 0 17px 16px;
+	background: none;
+	border: 1px solid #fff;
+	margin-top: 40px;
+	margin-right: 10px;
+	color: #ffffff;
+	font-family: Roboto;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 26px;
+	letter-spacing: 0.7px;
+}
+.r{
+	display: flex;
+	flex-direction: column;
+}
+.plane{
+	font-size: 30px;
+	text-align: center;
+}
+.btn__footer{
+	height: 63px;
+	border: 1px solid #ffffff;
+	background-color: #f3f3f3;
+	display: inline-block;
+	line-height: 53px;
+}
+.social__item{
+	color: #fff;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	font-size: 15px;
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	line-height: 33px;
+	margin-left: 10px;
+	transition: 0.3s all ease;
+}
+.social__item:hover{
+	cursor: pointer;
+	background: #00e0d0;
+}
+.footer__social{
+	margin-top: 30px;
+}
+.copyright{
+	margin-top: 70px;
+	color: #fff;
+	text-align: right;
+}

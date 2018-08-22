@@ -1,0 +1,35 @@
+@media screen and (max-width: 1024px){
+	.menu__title{
+		display: block;
+	}
+	.menu{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+}
+@media screen and (max-width: 768px){
+	.story{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.watch__story{
+		display: flex;
+		justify-content: center;
+	}
+	.client__h{
+		margin-top: 80px;
+	}
+	.footer__logo{
+		margin-right: 30px;
+		height: 55px;
+		width: auto;
+	}
+	.e{
+		margin-top: 50px;
+	}
+	.footer__content{
+		flex-wrap: wrap;
+	}
+}
