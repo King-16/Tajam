@@ -1,14 +1,8 @@
-@media screen and (max-width: 1024px){
+
+@media screen and (max-width: 768px){
 	.menu__title{
 		display: block;
 	}
-	.menu{
-		display: flex;
-		flex-direction: column;
-		text-align: center;
-	}
-}
-@media screen and (max-width: 768px){
 	.story{
 		display: flex;
 		flex-direction: column;
@@ -31,5 +25,29 @@
 	}
 	.footer__content{
 		flex-wrap: wrap;
+	}
+	.menu{
+		margin-left: -600px;
+		background: #332a58;
+	}
+
+}
+@media screen and (max-width: 425px){
+	.menu__title{
+		margin-left: 300px;
+	}
+	.menu{
+		flex-direction: column;
+		margin-left: -200px;
+	}
+	.watch__story{
+		display: flex;
+		flex-direction: column;
+		justify-content:center;
+		padding-left: 150px;
+	}
+	.seven__item{
+	height: 50px;
+	width: auto;
 	}
 }

@@ -4,8 +4,7 @@
 * {
 text-decoration:none;
 list-style:none;
--webkit-box-sizing:border-box;
-        box-sizing:border-box;
+box-sizing:border-box;
 margin:0;
 padding:0;
 }
@@ -77,24 +76,32 @@ max-width:100%;
 overflow:hidden;
 }
 
+.s {
+display:flex;
+justify-content:center;
+}
+
 header {
 background:url(../img/header-bg.jpg) center center;
 background-size:cover;
 height:670px;
 padding-top:15px;
+position:relative;
 }
 
 .menu {
 padding-top:15px;
+display:flex;
 }
 
 .menu__title {
 display:none;
 color:#fff;
-text-align:right;
 position:relative;
 right:0;
-top:-30px;
+top:-35px;
+transition:1s all ease;
+z-index:5;
 }
 
 .menu a {
@@ -142,10 +149,12 @@ margin-bottom:50px;
 .fixed {
 position:fixed;
 z-index:2;
-background:#332a58;
 left:0;
-max-width:100%;
 top:0;
+background:#332a58;
+max-width:100%;
+padding-top:15px;
+transition:.5s all ease;
 }
 
 .story {
@@ -325,6 +334,7 @@ margin:0 16px 0 30px;
 
 .seven__item {
 margin-left:14px;
+height: 50px;
 }
 
 .seven .row:nth-child(3) {
@@ -332,8 +342,6 @@ margin-top:45px;
 }
 
 .client__form {
-display:-webkit-box;
-display:-ms-flexbox;
 display:flex;
 padding:70px 0;
 }
@@ -348,8 +356,6 @@ padding:17px 0 14px 20px;
 }
 
 .client__item-block {
-display:-webkit-box;
-display:-ms-flexbox;
 display:flex;
 }
 
@@ -363,19 +369,20 @@ margin-bottom:50px;
 }
 
 .client__form .container {
--ms-flex-wrap:wrap;
-    flex-wrap:wrap;
+flex-wrap:wrap;
 }
 
 footer {
 background:url(../img/footer-bg.jpg) center center;
 background-size:cover;
--ms-flex-wrap:wrap;
-    flex-wrap:wrap;
-display:-webkit-box;
-display:-ms-flexbox;
+flex-wrap:wrap;
 display:flex;
 padding:70px 0;
+}
+
+.footer__row {
+display:flex;
+flex-wrap:wrap;
 }
 
 .tajam__p,.studio__p {
@@ -457,8 +464,6 @@ height:35px;
 text-align:center;
 line-height:33px;
 margin-left:10px;
--webkit-transition:.3s all ease;
--o-transition:.3s all ease;
 transition:.3s all ease;
 }
 
@@ -482,11 +487,6 @@ text-align:center;
 }
 
 .form__user,.r {
-display:-webkit-box;
-display:-ms-flexbox;
 display:flex;
--webkit-box-orient:vertical;
--webkit-box-direction:normal;
-    -ms-flex-direction:column;
-        flex-direction:column;
+flex-direction:column;
 }
